@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B2C58F32A4E62BE00C5BC1B /* lowpass_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C58F22A4E62BE00C5BC1B /* lowpass_filter.cc */; };
+		4B2C58FB2A4E654300C5BC1B /* vectorutils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C58FA2A4E654200C5BC1B /* vectorutils.cc */; };
+		4B2C58FD2A4E657E00C5BC1B /* median_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C58FC2A4E657E00C5BC1B /* median_filter.cc */; };
+		4B2C59002A4E661300C5BC1B /* mean_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C58FF2A4E661300C5BC1B /* mean_filter.cc */; };
+		4B2C59032A4E68A900C5BC1B /* neck_model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C59022A4E68A900C5BC1B /* neck_model.cc */; };
+		4B2C59062A4E693F00C5BC1B /* matrix_3x3.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C59052A4E693F00C5BC1B /* matrix_3x3.cc */; };
+		4B2C59092A4E69BF00C5BC1B /* matrix_4x4.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C59082A4E69BF00C5BC1B /* matrix_4x4.cc */; };
+		4B2C590C2A4E6A5C00C5BC1B /* rotation.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C590B2A4E6A5C00C5BC1B /* rotation.cc */; };
+		4B2C590F2A4E6B8F00C5BC1B /* gyroscope_bias_estimator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C590E2A4E6B8F00C5BC1B /* gyroscope_bias_estimator.cc */; };
+		4B578BC12A4FDF9C000EE72B /* cardboard.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766782A4FC88C007598DD /* cardboard.h */; };
+		4B578BC32A5115E3000EE72B /* cardboard.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B578BC22A5115E3000EE72B /* cardboard.cc */; };
+		4B578BCA2A511792000EE72B /* is_initialized.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B578BC82A511792000EE72B /* is_initialized.cc */; };
+		4BA766712A4FC5A3007598DD /* sensor_fusion_ekf.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766702A4FC5A3007598DD /* sensor_fusion_ekf.cc */; };
+		4BA766742A4FC64B007598DD /* matrixutils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766732A4FC64B007598DD /* matrixutils.cc */; };
+		4BA766772A4FC7E2007598DD /* head_tracker.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766762A4FC7E2007598DD /* head_tracker.cc */; };
+		4BA7667C2A4FC9E7007598DD /* device_accelerometer_sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7667B2A4FC9E7007598DD /* device_accelerometer_sensor.mm */; };
+		4BA7667F2A4FCA5F007598DD /* sensor_helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BA7667E2A4FCA5F007598DD /* sensor_helper.mm */; };
+		4BA766812A4FCC35007598DD /* device_gyroscope_sensor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766802A4FCC35007598DD /* device_gyroscope_sensor.mm */; };
+		4BA766832A4FCCA1007598DD /* sensor_event_producer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766822A4FCCA1007598DD /* sensor_event_producer.mm */; };
+		4BA766862A4FD34E007598DD /* cardboard_input_api.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4BA766852A4FD34E007598DD /* cardboard_input_api.mm */; };
+		4BD4610F2A52722A00DC5591 /* position_data.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BD4610D2A52722A00DC5591 /* position_data.cc */; };
+		4BD461122A52723600DC5591 /* rotation_data.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BD461102A52723600DC5591 /* rotation_data.cc */; };
+		4BD461192A52846800DC5591 /* unity_c_bridge.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4BD461182A52846800DC5591 /* unity_c_bridge.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B2C58DB2A4E5B9900C5BC1B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4B2C58DD2A4E5B9900C5BC1B /* libHoloKitLowLatencyTracking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHoloKitLowLatencyTracking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B2C58EC2A4E5CB300C5BC1B /* gyroscope_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gyroscope_data.h; sourceTree = "<group>"; };
+		4B2C58ED2A4E5D0900C5BC1B /* vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		4B2C58EE2A4E5E3100C5BC1B /* accelerometer_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = accelerometer_data.h; sourceTree = "<group>"; };
+		4B2C58EF2A4E5F0F00C5BC1B /* device_accelerometer_sensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = device_accelerometer_sensor.h; sourceTree = "<group>"; };
+		4B2C58F02A4E616C00C5BC1B /* device_gyroscope_sensor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = device_gyroscope_sensor.h; sourceTree = "<group>"; };
+		4B2C58F12A4E622400C5BC1B /* lowpass_filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lowpass_filter.h; sourceTree = "<group>"; };
+		4B2C58F22A4E62BE00C5BC1B /* lowpass_filter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lowpass_filter.cc; sourceTree = "<group>"; };
+		4B2C58F42A4E634E00C5BC1B /* median_filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = median_filter.h; sourceTree = "<group>"; };
+		4B2C58F72A4E643100C5BC1B /* vectorutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vectorutils.h; sourceTree = "<group>"; };
+		4B2C58FA2A4E654200C5BC1B /* vectorutils.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vectorutils.cc; sourceTree = "<group>"; };
+		4B2C58FC2A4E657E00C5BC1B /* median_filter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = median_filter.cc; sourceTree = "<group>"; };
+		4B2C58FE2A4E65BA00C5BC1B /* mean_filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mean_filter.h; sourceTree = "<group>"; };
+		4B2C58FF2A4E661300C5BC1B /* mean_filter.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mean_filter.cc; sourceTree = "<group>"; };
+		4B2C59012A4E666D00C5BC1B /* neck_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = neck_model.h; sourceTree = "<group>"; };
+		4B2C59022A4E68A900C5BC1B /* neck_model.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = neck_model.cc; sourceTree = "<group>"; };
+		4B2C59042A4E68E100C5BC1B /* matrix_3x3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix_3x3.h; sourceTree = "<group>"; };
+		4B2C59052A4E693F00C5BC1B /* matrix_3x3.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_3x3.cc; sourceTree = "<group>"; };
+		4B2C59072A4E696B00C5BC1B /* matrix_4x4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix_4x4.h; sourceTree = "<group>"; };
+		4B2C59082A4E69BF00C5BC1B /* matrix_4x4.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matrix_4x4.cc; sourceTree = "<group>"; };
+		4B2C590A2A4E69F900C5BC1B /* rotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotation.h; sourceTree = "<group>"; };
+		4B2C590B2A4E6A5C00C5BC1B /* rotation.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rotation.cc; sourceTree = "<group>"; };
+		4B2C590D2A4E6AE500C5BC1B /* gyroscope_bias_estimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gyroscope_bias_estimator.h; sourceTree = "<group>"; };
+		4B2C590E2A4E6B8F00C5BC1B /* gyroscope_bias_estimator.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gyroscope_bias_estimator.cc; sourceTree = "<group>"; };
+		4B2C59102A4E6CEC00C5BC1B /* rotation_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotation_state.h; sourceTree = "<group>"; };
+		4B2C59112A4E6DD400C5BC1B /* sensor_event_producer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sensor_event_producer.h; sourceTree = "<group>"; };
+		4B578BC22A5115E3000EE72B /* cardboard.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cardboard.cc; sourceTree = "<group>"; };
+		4B578BC82A511792000EE72B /* is_initialized.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = is_initialized.cc; sourceTree = "<group>"; };
+		4B578BC92A511792000EE72B /* is_initialized.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = is_initialized.h; sourceTree = "<group>"; };
+		4B578BCB2A511878000EE72B /* is_arg_null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = is_arg_null.h; sourceTree = "<group>"; };
+		4B578BCC2A5118AF000EE72B /* logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = logging.h; sourceTree = "<group>"; };
+		4BA7666F2A4FC4E6007598DD /* sensor_fusion_ekf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sensor_fusion_ekf.h; sourceTree = "<group>"; };
+		4BA766702A4FC5A3007598DD /* sensor_fusion_ekf.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sensor_fusion_ekf.cc; sourceTree = "<group>"; };
+		4BA766722A4FC5E8007598DD /* matrixutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrixutils.h; sourceTree = "<group>"; };
+		4BA766732A4FC64B007598DD /* matrixutils.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = matrixutils.cc; sourceTree = "<group>"; };
+		4BA766752A4FC758007598DD /* head_tracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = head_tracker.h; sourceTree = "<group>"; };
+		4BA766762A4FC7E2007598DD /* head_tracker.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = head_tracker.cc; sourceTree = "<group>"; };
+		4BA766782A4FC88C007598DD /* cardboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardboard.h; sourceTree = "<group>"; };
+		4BA7667B2A4FC9E7007598DD /* device_accelerometer_sensor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = device_accelerometer_sensor.mm; sourceTree = "<group>"; };
+		4BA7667D2A4FCA30007598DD /* sensor_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sensor_helper.h; sourceTree = "<group>"; };
+		4BA7667E2A4FCA5F007598DD /* sensor_helper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = sensor_helper.mm; sourceTree = "<group>"; };
+		4BA766802A4FCC35007598DD /* device_gyroscope_sensor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = device_gyroscope_sensor.mm; sourceTree = "<group>"; };
+		4BA766822A4FCCA1007598DD /* sensor_event_producer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = sensor_event_producer.mm; sourceTree = "<group>"; };
+		4BA766842A4FD339007598DD /* cardboard_input_api.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cardboard_input_api.h; sourceTree = "<group>"; };
+		4BA766852A4FD34E007598DD /* cardboard_input_api.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = cardboard_input_api.mm; sourceTree = "<group>"; };
+		4BD4610D2A52722A00DC5591 /* position_data.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = position_data.cc; sourceTree = "<group>"; };
+		4BD4610E2A52722A00DC5591 /* position_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = position_data.h; sourceTree = "<group>"; };
+		4BD461102A52723600DC5591 /* rotation_data.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rotation_data.cc; sourceTree = "<group>"; };
+		4BD461112A52723600DC5591 /* rotation_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotation_data.h; sourceTree = "<group>"; };
+		4BD461182A52846800DC5591 /* unity_c_bridge.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unity_c_bridge.cc; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B2C58DA2A4E5B9900C5BC1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B2C58D42A4E5B9900C5BC1B = {
+			isa = PBXGroup;
+			children = (
+				4B2C58DF2A4E5B9900C5BC1B /* HoloKitLowLatencyTracking */,
+				4B2C58DE2A4E5B9900C5BC1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B2C58DE2A4E5B9900C5BC1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B2C58DD2A4E5B9900C5BC1B /* libHoloKitLowLatencyTracking.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B2C58DF2A4E5B9900C5BC1B /* HoloKitLowLatencyTracking */ = {
+			isa = PBXGroup;
+			children = (
+				4BA766792A4FC898007598DD /* include */,
+				4B2C58EB2A4E5C4100C5BC1B /* sensors */,
+				4BD4610B2A52720800DC5591 /* sixdof */,
+				4B2C58EA2A4E5C0700C5BC1B /* util */,
+				4BA766752A4FC758007598DD /* head_tracker.h */,
+				4BA766762A4FC7E2007598DD /* head_tracker.cc */,
+				4B578BC22A5115E3000EE72B /* cardboard.cc */,
+				4BA766842A4FD339007598DD /* cardboard_input_api.h */,
+				4BA766852A4FD34E007598DD /* cardboard_input_api.mm */,
+				4BD461182A52846800DC5591 /* unity_c_bridge.cc */,
+			);
+			path = HoloKitLowLatencyTracking;
+			sourceTree = "<group>";
+		};
+		4B2C58EA2A4E5C0700C5BC1B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4B2C58ED2A4E5D0900C5BC1B /* vector.h */,
+				4B2C58F72A4E643100C5BC1B /* vectorutils.h */,
+				4B2C58FA2A4E654200C5BC1B /* vectorutils.cc */,
+				4B2C59042A4E68E100C5BC1B /* matrix_3x3.h */,
+				4B2C59052A4E693F00C5BC1B /* matrix_3x3.cc */,
+				4B2C59072A4E696B00C5BC1B /* matrix_4x4.h */,
+				4B2C59082A4E69BF00C5BC1B /* matrix_4x4.cc */,
+				4B2C590A2A4E69F900C5BC1B /* rotation.h */,
+				4B2C590B2A4E6A5C00C5BC1B /* rotation.cc */,
+				4BA766722A4FC5E8007598DD /* matrixutils.h */,
+				4BA766732A4FC64B007598DD /* matrixutils.cc */,
+				4B578BC92A511792000EE72B /* is_initialized.h */,
+				4B578BC82A511792000EE72B /* is_initialized.cc */,
+				4B578BCB2A511878000EE72B /* is_arg_null.h */,
+				4B578BCC2A5118AF000EE72B /* logging.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		4B2C58EB2A4E5C4100C5BC1B /* sensors */ = {
+			isa = PBXGroup;
+			children = (
+				4BA7667A2A4FC9BA007598DD /* ios */,
+				4B2C58EE2A4E5E3100C5BC1B /* accelerometer_data.h */,
+				4B2C58EC2A4E5CB300C5BC1B /* gyroscope_data.h */,
+				4B2C58EF2A4E5F0F00C5BC1B /* device_accelerometer_sensor.h */,
+				4B2C58F02A4E616C00C5BC1B /* device_gyroscope_sensor.h */,
+				4B2C58F12A4E622400C5BC1B /* lowpass_filter.h */,
+				4B2C58F22A4E62BE00C5BC1B /* lowpass_filter.cc */,
+				4B2C58F42A4E634E00C5BC1B /* median_filter.h */,
+				4B2C58FC2A4E657E00C5BC1B /* median_filter.cc */,
+				4B2C58FE2A4E65BA00C5BC1B /* mean_filter.h */,
+				4B2C58FF2A4E661300C5BC1B /* mean_filter.cc */,
+				4B2C59012A4E666D00C5BC1B /* neck_model.h */,
+				4B2C59022A4E68A900C5BC1B /* neck_model.cc */,
+				4B2C590D2A4E6AE500C5BC1B /* gyroscope_bias_estimator.h */,
+				4B2C590E2A4E6B8F00C5BC1B /* gyroscope_bias_estimator.cc */,
+				4B2C59102A4E6CEC00C5BC1B /* rotation_state.h */,
+				4B2C59112A4E6DD400C5BC1B /* sensor_event_producer.h */,
+				4BA7666F2A4FC4E6007598DD /* sensor_fusion_ekf.h */,
+				4BA766702A4FC5A3007598DD /* sensor_fusion_ekf.cc */,
+			);
+			path = sensors;
+			sourceTree = "<group>";
+		};
+		4BA766792A4FC898007598DD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4BA766782A4FC88C007598DD /* cardboard.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4BA7667A2A4FC9BA007598DD /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				4BA7667D2A4FCA30007598DD /* sensor_helper.h */,
+				4BA7667E2A4FCA5F007598DD /* sensor_helper.mm */,
+				4BA7667B2A4FC9E7007598DD /* device_accelerometer_sensor.mm */,
+				4BA766802A4FCC35007598DD /* device_gyroscope_sensor.mm */,
+				4BA766822A4FCCA1007598DD /* sensor_event_producer.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		4BD4610B2A52720800DC5591 /* sixdof */ = {
+			isa = PBXGroup;
+			children = (
+				4BD4610E2A52722A00DC5591 /* position_data.h */,
+				4BD4610D2A52722A00DC5591 /* position_data.cc */,
+				4BD461112A52723600DC5591 /* rotation_data.h */,
+				4BD461102A52723600DC5591 /* rotation_data.cc */,
+			);
+			path = sixdof;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B2C58DC2A4E5B9900C5BC1B /* HoloKitLowLatencyTracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B2C58E62A4E5B9900C5BC1B /* Build configuration list for PBXNativeTarget "HoloKitLowLatencyTracking" */;
+			buildPhases = (
+				4B2C58D92A4E5B9900C5BC1B /* Sources */,
+				4B2C58DA2A4E5B9900C5BC1B /* Frameworks */,
+				4B2C58DB2A4E5B9900C5BC1B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoloKitLowLatencyTracking;
+			productName = HoloKitUnitySDK_LowLatencyTracking;
+			productReference = 4B2C58DD2A4E5B9900C5BC1B /* libHoloKitLowLatencyTracking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B2C58D52A4E5B9900C5BC1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					4B2C58DC2A4E5B9900C5BC1B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 4B2C58D82A4E5B9900C5BC1B /* Build configuration list for PBXProject "HoloKitLowLatencyTracking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B2C58D42A4E5B9900C5BC1B;
+			productRefGroup = 4B2C58DE2A4E5B9900C5BC1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B2C58DC2A4E5B9900C5BC1B /* HoloKitLowLatencyTracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B2C58D92A4E5B9900C5BC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B578BCA2A511792000EE72B /* is_initialized.cc in Sources */,
+				4B578BC12A4FDF9C000EE72B /* cardboard.h in Sources */,
+				4BA766832A4FCCA1007598DD /* sensor_event_producer.mm in Sources */,
+				4B578BC32A5115E3000EE72B /* cardboard.cc in Sources */,
+				4B2C58F32A4E62BE00C5BC1B /* lowpass_filter.cc in Sources */,
+				4BA7667C2A4FC9E7007598DD /* device_accelerometer_sensor.mm in Sources */,
+				4B2C59032A4E68A900C5BC1B /* neck_model.cc in Sources */,
+				4BD461122A52723600DC5591 /* rotation_data.cc in Sources */,
+				4BA766862A4FD34E007598DD /* cardboard_input_api.mm in Sources */,
+				4BA766772A4FC7E2007598DD /* head_tracker.cc in Sources */,
+				4B2C58FB2A4E654300C5BC1B /* vectorutils.cc in Sources */,
+				4B2C59002A4E661300C5BC1B /* mean_filter.cc in Sources */,
+				4BD4610F2A52722A00DC5591 /* position_data.cc in Sources */,
+				4BD461192A52846800DC5591 /* unity_c_bridge.cc in Sources */,
+				4B2C59092A4E69BF00C5BC1B /* matrix_4x4.cc in Sources */,
+				4B2C590C2A4E6A5C00C5BC1B /* rotation.cc in Sources */,
+				4B2C58FD2A4E657E00C5BC1B /* median_filter.cc in Sources */,
+				4B2C590F2A4E6B8F00C5BC1B /* gyroscope_bias_estimator.cc in Sources */,
+				4BA766742A4FC64B007598DD /* matrixutils.cc in Sources */,
+				4BA7667F2A4FCA5F007598DD /* sensor_helper.mm in Sources */,
+				4BA766712A4FC5A3007598DD /* sensor_fusion_ekf.cc in Sources */,
+				4BA766812A4FCC35007598DD /* device_gyroscope_sensor.mm in Sources */,
+				4B2C59062A4E693F00C5BC1B /* matrix_3x3.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B2C58E42A4E5B9900C5BC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B2C58E52A4E5B9900C5BC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B2C58E72A4E5B9900C5BC1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9TVSH3F53;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/HoloKitLowLatencyTracking";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B2C58E82A4E5B9900C5BC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9TVSH3F53;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/HoloKitLowLatencyTracking";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B2C58D82A4E5B9900C5BC1B /* Build configuration list for PBXProject "HoloKitLowLatencyTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2C58E42A4E5B9900C5BC1B /* Debug */,
+				4B2C58E52A4E5B9900C5BC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B2C58E62A4E5B9900C5BC1B /* Build configuration list for PBXNativeTarget "HoloKitLowLatencyTracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B2C58E72A4E5B9900C5BC1B /* Debug */,
+				4B2C58E82A4E5B9900C5BC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B2C58D52A4E5B9900C5BC1B /* Project object */;
+}

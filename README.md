@@ -21,3 +21,17 @@ The file `HoloKitLowLatencyTracking/unity_c_bridge.cc` comprises native marshall
 - `HoloInteractiveHoloKit_LowLatencyTracking_getHeadTrackerPose`: Retrieves the latest predicted head pose of the user.
 
 - `HoloInteractiveHoloKit_LowLatencyTracking_delete`: Releases the native pointer associated with the low latency tracking system.
+
+## How `LowLatencyTrackingManager` Script Works
+
+The `[LowLatencyTrackingManager](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/LowLatencyTrackingManager.cs)` script from HoloKit Unity SDK serves as the central component for managing low latency tracking on the C# side.
+
+Its `Start()` function executes three critical steps:
+
+- It sets up the `ARCameraManager.frameReceived` callback, indicating when a new 6DoF pose is calculated by ARKit. This data is subsequently fed into the native low latency tracking system.
+
+- It establishes the `Application.onBeforeRender` callback. This is used to fetch the estimated 6DoF pose from the native low latency tracking system right before rendering, ensuring the camera pose is updated in real-time.
+
+- It initializes the native side of the low latency tracking system, setting the groundwork for the tracking process.
+
+By handling these callbacks and the native system initialization, `LowLatencyTrackingManager` ensures that the camera pose is always synchronized with the latest pose data from ARKit, minimizing latency and enhancing the AR experience.

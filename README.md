@@ -24,7 +24,7 @@ The file `HoloKitLowLatencyTracking/unity_c_bridge.cc` comprises native marshall
 
 ## How `LowLatencyTrackingManager` Script Works
 
-The `[LowLatencyTrackingManager](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/LowLatencyTrackingManager.cs)` script from HoloKit Unity SDK serves as the central component for managing low latency tracking on the C# side.
+The [LowLatencyTrackingManager](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/LowLatencyTrackingManager.cs) script from HoloKit Unity SDK serves as the central component for managing low latency tracking on the C# side.
 
 Its `Start()` function executes three critical steps:
 

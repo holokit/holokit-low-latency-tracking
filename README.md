@@ -37,3 +37,9 @@ Its `Start()` function executes three critical steps:
 - It initializes the native side of the low latency tracking system, setting the groundwork for the tracking process.
 
 By handling these callbacks and the native system initialization, `LowLatencyTrackingManager` ensures that the camera pose is always synchronized with the latest pose data from ARKit, minimizing latency and enhancing the AR experience.
+
+## Future Improvements
+
+Opportunities for enhancing the native low latency tracking system primarily lie in fine-tuning its parameters. To effectively ahieve this, as in-depth comprenhension of the original [Google Cardboard repository](https://github.com/googlevr/cardboard) and [Aryzon's modified version](https://github.com/Aryzon/cardboard/tree/main) is crucial. This understanding will enable developers to make informed adjustments that can significantly elevate the system's performance.
+
+To modify the code, you can utilize Xcode to open the project. After making changes, use Xcode to pack all files into a new .a library. Then, simply replace the existing SDK's [native library file](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/iOS/NativeLibrary/libHoloKitLowLatencyTracking.a) with this newly created version. If you want to change the bridge interface file `unity_c_bridge.cc`, you also need to change the [LowLatencyTrackingManager](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/LowLatencyTrackingManager.cs) script in HoloKit Unity SDK accordingly.

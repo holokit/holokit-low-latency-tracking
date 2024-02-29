@@ -1,6 +1,6 @@
 # HoloKit Low Latency Tracking
 
-This repository contains the source code of the native low latency tracking system used in [HoloKit Unity SDK](https://github.com/holoi/holokit-unity-sdk). The source code in this repository is packed into the SDK's [native library file](https://github.com/holoi/holokit-unity-sdk/blob/main/Runtime/iOS/NativeLibrary/libHoloKitLowLatencyTracking.a).
+This repository contains the source code of the native low latency tracking system used in [HoloKit Unity SDK](https://github.com/holokit/holokit-unity-sdk). The source code in this repository is packed into the SDK's [native library file](https://github.com/holokit/holokit-unity-sdk/blob/main/Runtime/iOS/NativeLibrary/libHoloKitLowLatencyTracking.a).
 
 HoloKit uses ARKit's spatial tracking feature to get the 6DoF (Degrees of Freedom) pose of the user's head. ARKit, designed for iOS devices, is primarily tailored for screen-based AR experiences, where real-time camera background images are displayed on the screen. To ensure stability, the mobile device introduces a delay in the camera video stream, enhancing the integration of real and virtual content. However, in the case of HoloKit, an optical-see-through (OST) headset, this delay causes a misalignment between virtual content and the real world, especially noticeable when the user moves their head.
 

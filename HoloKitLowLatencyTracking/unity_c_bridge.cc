@@ -3,32 +3,32 @@
 
 extern "C" {
 
-void* HoloInteractiveHoloKit_LowLatencyTracking_init() {
+void* HoloKit_LowLatencyTracking_init() {
     cardboard::unity::CardboardInputApi *cardboard_input_api = new cardboard::unity::CardboardInputApi();
     return static_cast<void *>(cardboard_input_api);
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_initHeadTracker(void *self) {
+void HoloKit_LowLatencyTracking_initHeadTracker(void *self) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     cardboard_input_api->InitHeadTracker();
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_pauseHeadTracker(void *self) {
+void HoloKit_LowLatencyTracking_pauseHeadTracker(void *self) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     cardboard_input_api->PauseHeadTracker();
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_resumeHeadTracker(void *self) {
+void HoloKit_LowLatencyTracking_resumeHeadTracker(void *self) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     cardboard_input_api->ResumeHeadTracker();
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_addSixDoFData(void *self, int64_t timestamp_ns, float *position, float *orientation) {
+void HoloKit_LowLatencyTracking_addSixDoFData(void *self, int64_t timestamp_ns, float *position, float *orientation) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     cardboard_input_api->AddSixDoFData(timestamp_ns, position, orientation);
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_getHeadTrackerPose(void *self, float *position, float *orientation) {
+void HoloKit_LowLatencyTracking_getHeadTrackerPose(void *self, float *position, float *orientation) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     
     std::array<float, 3> out_position;
@@ -44,7 +44,7 @@ void HoloInteractiveHoloKit_LowLatencyTracking_getHeadTrackerPose(void *self, fl
     orientation[3] = out_orientation.at(3);
 }
 
-void HoloInteractiveHoloKit_LowLatencyTracking_delete(void *self) {
+void HoloKit_LowLatencyTracking_delete(void *self) {
     cardboard::unity::CardboardInputApi *cardboard_input_api = static_cast<cardboard::unity::CardboardInputApi *>(self);
     delete cardboard_input_api;
 }
